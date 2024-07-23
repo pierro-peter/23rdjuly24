@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form </title>
+    <style>
+        .error {
+            color:orange; 
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" class="error"></span><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailError" class="error"></span><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span><br><br>
+
+        <button type="submit" id="submit" >Submit</button>
+        <button type="button" id="resetButton">Reset</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
